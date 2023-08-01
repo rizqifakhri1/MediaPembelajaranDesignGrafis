@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.zaki.mediapembelajarandesaingrafis.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_selectFragment"
+            app:destination="@id/selectFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectFragment"
+        android:name="com.zaki.mediapembelajarandesaingrafis.SelectFragment"
+        android:label="fragment_select"
+        tools:layout="@layout/fragment_select" />
+    <fragment
+        android:id="@+id/materiFragment"
+        android:name="com.zaki.mediapembelajarandesaingrafis.MateriFragment"
+        android:label="fragment_materi"
+        tools:layout="@layout/fragment_materi" />
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="com.zaki.mediapembelajarandesaingrafis.VideoFragment"
+        android:label="fragment_video"
+        tools:layout="@layout/fragment_video" />
+    <fragment
+        android:id="@+id/materiSatuFragment"
+        android:name="com.zaki.mediapembelajarandesaingrafis.MateriSatuFragment"
+        android:label="fragment_materi_satu"
+        tools:layout="@layout/fragment_materi_satu" />
+    <fragment
+        android:id="@+id/materiDuaFragment"
+        android:name="com.zaki.mediapembelajarandesaingrafis.MateriDuaFragment"
+        android:label="fragment_materi_dua"
+        tools:layout="@layout/fragment_materi_dua" />
+    <fragment
+        android:id="@+id/materiTigaFragment"
+        android:name="com.zaki.mediapembelajarandesaingrafis.MateriTigaFragment"
+        android:label="fragment_materi_tiga"
+        tools:layout="@layout/fragment_materi_tiga" />
+</navigation>
