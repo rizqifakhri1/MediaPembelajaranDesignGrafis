@@ -18,12 +18,32 @@
         android:id="@+id/selectFragment"
         android:name="com.zaki.mediapembelajarandesaingrafis.SelectFragment"
         android:label="fragment_select"
-        tools:layout="@layout/fragment_select" />
+        tools:layout="@layout/fragment_select" >
+        <action
+            android:id="@+id/action_selectFragment_to_materiFragment"
+            app:destination="@id/materiFragment" />
+        <action
+            android:id="@+id/action_selectFragment_to_videoFragment"
+            app:destination="@id/videoFragment" />
+    </fragment>
     <fragment
         android:id="@+id/materiFragment"
         android:name="com.zaki.mediapembelajarandesaingrafis.MateriFragment"
         android:label="fragment_materi"
-        tools:layout="@layout/fragment_materi" />
+        tools:layout="@layout/fragment_materi" >
+        <action
+            android:id="@+id/action_materiFragment_to_materiSatuFragment"
+            app:destination="@id/materiSatuFragment" />
+        <action
+            android:id="@+id/action_materiFragment_to_materiDuaFragment"
+            app:destination="@id/materiDuaFragment" />
+        <action
+            android:id="@+id/action_materiFragment_to_materiTigaFragment"
+            app:destination="@id/materiTigaFragment" />
+        <action
+            android:id="@+id/action_materiFragment_to_materiEmpatFragment"
+            app:destination="@id/materiEmpatFragment" />
+    </fragment>
     <fragment
         android:id="@+id/videoFragment"
         android:name="com.zaki.mediapembelajarandesaingrafis.VideoFragment"
@@ -44,4 +64,9 @@
         android:name="com.zaki.mediapembelajarandesaingrafis.MateriTigaFragment"
         android:label="fragment_materi_tiga"
         tools:layout="@layout/fragment_materi_tiga" />
+    <fragment
+        android:id="@+id/materiEmpatFragment"
+        android:name="com.zaki.mediapembelajarandesaingrafis.MateriEmpatFragment"
+        android:label="fragment_materi_empat"
+        tools:layout="@layout/fragment_materi_empat" />
 </navigation>

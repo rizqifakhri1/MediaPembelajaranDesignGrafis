@@ -2,4 +2,6 @@
     <string name="app_name">Media Pembelajaran Desain Grafis</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="desc_design">Desain grafis adalah proses komunikasi menggunakan elemen visual, seperti tulisan, bentuk, dan gambar yang dimaksudkan untuk menciptakan persepsi akan suatu pesan yang disampaikan</string>
+    <string name="desc_video">Teman-teman, yuk kembangkan kemampuan desain grafis kalian dengan praktik langsung beberapa materi menarik berikut!</string>
 </resources>

@@ -55,16 +55,52 @@
             app:layout_constraintTop_toTopOf="@id/bg_home"/>
 
         <ImageView
-            android:id="@+id/bab1_1"
+            android:id="@+id/bab2a"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:src=""
+            android:src="@drawable/bab2a"
             android:adjustViewBounds="true"
             android:layout_marginHorizontal="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/iv_line" />
+
+        <ImageView
+            android:id="@+id/bab2b"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/bab2b"
+            android:adjustViewBounds="true"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bab2a" />
+
+        <ImageView
+            android:id="@+id/bab2c"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/bab2c"
+            android:adjustViewBounds="true"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bab2b" />
+
+        <ImageView
+            android:id="@+id/bab2d"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/bab2d"
+            android:adjustViewBounds="true"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bab2c" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

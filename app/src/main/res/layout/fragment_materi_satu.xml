@@ -58,7 +58,7 @@
             android:id="@+id/bab1_1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:src=""
+            android:src="@drawable/bab1"
             android:adjustViewBounds="true"
             android:layout_marginHorizontal="16dp"
             app:layout_constraintEnd_toEndOf="parent"

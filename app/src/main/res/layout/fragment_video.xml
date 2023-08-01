@@ -50,6 +50,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/bg_home"/>
 
+    <TextView
+        android:id="@+id/video_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/desc_video"
+        android:textAlignment="center"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_regular"
+        android:backgroundTint="@color/biru"
+        android:background="@drawable/round_bg_default"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_line"/>
+
     <ImageView
         android:id="@+id/logo_materi"
         android:layout_width="wrap_content"
@@ -58,7 +75,7 @@
         android:layout_marginStart="16dp"
         android:src="@drawable/title_video"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/iv_line"/>
+        app:layout_constraintTop_toBottomOf="@id/video_desc"/>
 
     <ImageView
         android:layout_width="0dp"
@@ -78,7 +95,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginHorizontal="16dp"
         android:fontFamily="@font/poppins_regular"
-        android:text="Bab 1 : Jenis - Jenis Desain Grafis"
+        android:text="Belajar Dasar CorelDraw"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/extend1"
         app:layout_constraintTop_toBottomOf="@id/logo_materi"/>
@@ -114,7 +131,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginHorizontal="16dp"
         android:fontFamily="@font/poppins_regular"
-        android:text="Bab 2 : Tools Corel Draw"
+        android:text="Belajar Membuat Kartu Nama"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/extend2"
         app:layout_constraintTop_toBottomOf="@id/line1"/>
@@ -150,7 +167,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginHorizontal="16dp"
         android:fontFamily="@font/poppins_regular"
-        android:text="Bab 3 : Prinsip Dasar Desain Grafis"
+        android:text="Belajar membuat CV"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/extend3"
         app:layout_constraintTop_toBottomOf="@id/line2"/>
@@ -179,38 +196,6 @@
 
     <!--Materi empat -->
 
-    <TextView
-        android:id="@+id/tv_video_empat"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginHorizontal="16dp"
-        android:fontFamily="@font/poppins_regular"
-        android:text="Bab 4 : Hasil Karya Desain Grafis"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/extend4"
-        app:layout_constraintTop_toBottomOf="@id/line3"/>
 
-    <ImageView
-        android:id="@+id/extend4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_extend"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/tv_video_empat"
-        app:layout_constraintBottom_toBottomOf="@id/tv_video_empat"/>
-
-    <ImageView
-        android:id="@+id/line4"
-        android:layout_width="match_parent"
-        android:layout_height="1.5dp"
-        android:background="@drawable/round_bg_default"
-        android:backgroundTint="@color/abu"
-        android:layout_marginTop="14dp"
-        android:layout_marginHorizontal="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_video_empat"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
