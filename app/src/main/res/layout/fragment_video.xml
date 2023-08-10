@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,195 +7,225 @@
     android:background="@color/biru"
     tools:context=".VideoFragment">
 
-    <ImageView
-        android:id="@+id/ic_logoapp"
-        android:layout_marginTop="32dp"
-        android:layout_width="132dp"
-        android:layout_height="98dp"
-        android:src="@drawable/logo_app_putih"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
-    <ImageView
-        android:id="@+id/btn_back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_back"
-        android:layout_marginStart="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/ic_logoapp"/>
-
-    <ImageView
-        android:id="@+id/bg_home"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/rounddua_bg"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ic_logoapp"
-        app:layout_constraintVertical_bias="0.0" />
+        android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/iv_line"
-        android:layout_width="64dp"
-        android:layout_height="5dp"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/round_bg_default"
-        android:backgroundTint="@color/biru"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/bg_home"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:src="@drawable/bg_circle"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
 
-    <TextView
-        android:id="@+id/video_desc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/desc_video"
-        android:textAlignment="center"
-        android:padding="16dp"
-        android:textColor="@color/white"
-        android:fontFamily="@font/poppins_regular"
-        android:backgroundTint="@color/biru"
-        android:background="@drawable/round_bg_default"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/iv_line"/>
+        <ImageView
+            android:id="@+id/char_materi"
+            android:layout_width="291dp"
+            android:layout_height="303dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/chardua"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ic_logoapp" />
 
-    <ImageView
-        android:id="@+id/logo_materi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginStart="16dp"
-        android:src="@drawable/title_video"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/video_desc"/>
+        <ImageView
+            android:id="@+id/ic_logoapp"
+            android:layout_marginTop="32dp"
+            android:layout_width="132dp"
+            android:layout_height="98dp"
+            android:src="@drawable/logo_app_putih"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
 
-    <ImageView
-        android:layout_width="0dp"
-        android:layout_height="2dp"
-        android:background="@color/abu"
-        android:layout_marginHorizontal="32dp"
-        app:layout_constraintStart_toEndOf="@id/logo_materi"
-        app:layout_constraintTop_toTopOf="@id/logo_materi"
-        app:layout_constraintBottom_toBottomOf="@id/logo_materi"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/ic_logoapp"/>
 
-    <!-- Materi Satu  -->
-    <TextView
-        android:id="@+id/tv_video_satu"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginHorizontal="16dp"
-        android:fontFamily="@font/poppins_regular"
-        android:text="Belajar Dasar CorelDraw"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/extend1"
-        app:layout_constraintTop_toBottomOf="@id/logo_materi"/>
+        <ImageView
+            android:id="@+id/bg_home"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/rounddua_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/char_materi"
+            app:layout_constraintVertical_bias="0.0" />
 
-    <ImageView
-        android:id="@+id/extend1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_extend"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/tv_video_satu"
-        app:layout_constraintBottom_toBottomOf="@id/tv_video_satu"/>
+        <ImageView
+            android:id="@+id/iv_line"
+            android:layout_width="64dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/round_bg_default"
+            android:backgroundTint="@color/biru"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/bg_home"/>
 
-    <ImageView
-        android:id="@+id/line1"
-        android:layout_width="match_parent"
-        android:layout_height="1.5dp"
-        android:background="@drawable/round_bg_default"
-        android:backgroundTint="@color/abu"
-        android:layout_marginTop="14dp"
-        android:layout_marginHorizontal="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_video_satu"/>
+        <TextView
+            android:id="@+id/video_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/desc_video"
+            android:textAlignment="center"
+            android:padding="16dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_regular"
+            android:backgroundTint="@color/biru"
+            android:background="@drawable/round_bg_default"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_line"/>
 
-    <!--Materi dua-->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/logo_materi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/video_desc"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/title_video_anim"/>
 
-    <TextView
-        android:id="@+id/tv_video_dua"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginHorizontal="16dp"
-        android:fontFamily="@font/poppins_regular"
-        android:text="Belajar Membuat Kartu Nama"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/extend2"
-        app:layout_constraintTop_toBottomOf="@id/line1"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="@color/abu"
+            android:layout_marginHorizontal="32dp"
+            app:layout_constraintStart_toEndOf="@id/logo_materi"
+            app:layout_constraintTop_toTopOf="@id/logo_materi"
+            app:layout_constraintBottom_toBottomOf="@id/logo_materi"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
-    <ImageView
-        android:id="@+id/extend2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_extend"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/tv_video_dua"
-        app:layout_constraintBottom_toBottomOf="@id/tv_video_dua"/>
+        <!-- Materi Satu  -->
+        <TextView
+            android:id="@+id/tv_video_satu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="16dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Belajar Dasar CorelDraw"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/extend1"
+            app:layout_constraintTop_toBottomOf="@id/logo_materi"/>
 
-    <ImageView
-        android:id="@+id/line2"
-        android:layout_width="match_parent"
-        android:layout_height="1.5dp"
-        android:background="@drawable/round_bg_default"
-        android:backgroundTint="@color/abu"
-        android:layout_marginTop="14dp"
-        android:layout_marginHorizontal="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_video_dua"/>
+        <ImageView
+            android:id="@+id/extend1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_extend"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_video_satu"
+            app:layout_constraintBottom_toBottomOf="@id/tv_video_satu"/>
 
-    <!--Materi tiga-->
+        <ImageView
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="@drawable/round_bg_default"
+            android:backgroundTint="@color/abu"
+            android:layout_marginTop="14dp"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_video_satu"/>
 
-    <TextView
-        android:id="@+id/tv_video_tiga"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginHorizontal="16dp"
-        android:fontFamily="@font/poppins_regular"
-        android:text="Belajar membuat CV"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/extend3"
-        app:layout_constraintTop_toBottomOf="@id/line2"/>
+        <!--Materi dua-->
 
-    <ImageView
-        android:id="@+id/extend3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_extend"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/tv_video_tiga"
-        app:layout_constraintBottom_toBottomOf="@id/tv_video_tiga"/>
+        <TextView
+            android:id="@+id/tv_video_dua"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="16dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Belajar Membuat Kartu Nama"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/extend2"
+            app:layout_constraintTop_toBottomOf="@id/line1"/>
 
-    <ImageView
-        android:id="@+id/line3"
-        android:layout_width="match_parent"
-        android:layout_height="1.5dp"
-        android:background="@drawable/round_bg_default"
-        android:backgroundTint="@color/abu"
-        android:layout_marginTop="14dp"
-        android:layout_marginHorizontal="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_video_tiga"/>
+        <ImageView
+            android:id="@+id/extend2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_extend"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_video_dua"
+            app:layout_constraintBottom_toBottomOf="@id/tv_video_dua"/>
+
+        <ImageView
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="@drawable/round_bg_default"
+            android:backgroundTint="@color/abu"
+            android:layout_marginTop="14dp"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_video_dua"/>
+
+        <!--Materi tiga-->
+
+        <TextView
+            android:id="@+id/tv_video_tiga"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="16dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Belajar membuat CV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/extend3"
+            app:layout_constraintTop_toBottomOf="@id/line2"/>
+
+        <ImageView
+            android:id="@+id/extend3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_extend"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_video_tiga"
+            app:layout_constraintBottom_toBottomOf="@id/tv_video_tiga"/>
+
+        <ImageView
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="@drawable/round_bg_default"
+            android:backgroundTint="@color/abu"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="200dp"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_video_tiga"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <!--Materi empat -->
 
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

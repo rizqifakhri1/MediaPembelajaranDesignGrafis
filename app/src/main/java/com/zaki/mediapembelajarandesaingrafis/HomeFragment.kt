@@ -26,7 +26,14 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.btnMulai.setOnClickListener {
-            
+            findNavController().navigate(R.id.action_homeFragment_to_selectFragment)
+        }
+
+        binding.icLogoapp.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_selectFragment)
+        }
+
+        binding.bgBiru.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_selectFragment)
         }
 

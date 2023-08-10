@@ -35,21 +35,21 @@ class VideoFragment : Fragment() {
 
         binding.tvVideoSatu.setOnClickListener {
             val uri: Uri =
-                Uri.parse("https://youtu.be/LQYtL41qa88") // missing 'http://' will cause crashed
+                Uri.parse("https://youtu.be/aXfvwYTdbAo") // missing 'http://' will cause crashed
             val intent = Intent(Intent.ACTION_VIEW, uri)
             startActivity(intent)
         }
 
         binding.tvVideoDua.setOnClickListener {
             val uri: Uri =
-                Uri.parse("https://youtu.be/BFDO_-Fppd0") // missing 'http://' will cause crashed
+                Uri.parse("https://youtu.be/htgBQRznszI") // missing 'http://' will cause crashed
             val intent = Intent(Intent.ACTION_VIEW, uri)
             startActivity(intent)
         }
 
         binding.tvVideoTiga.setOnClickListener {
             val uri: Uri =
-                Uri.parse("https://youtu.be/Qwgz70fFvI8") // missing 'http://' will cause crashed
+                Uri.parse("https://youtu.be/Bw7gzJUtkl8") // missing 'http://' will cause crashed
             val intent = Intent(Intent.ACTION_VIEW, uri)
             startActivity(intent)
         }
@@ -63,21 +63,21 @@ class VideoFragment : Fragment() {
 
         binding.extend1.setOnClickListener {
             val uri: Uri =
-                Uri.parse("https://youtu.be/LQYtL41qa88") // missing 'http://' will cause crashed
+                Uri.parse("https://youtu.be/aXfvwYTdbAo") // missing 'http://' will cause crashed
             val intent = Intent(Intent.ACTION_VIEW, uri)
             startActivity(intent)
         }
 
         binding.extend2.setOnClickListener {
             val uri: Uri =
-                Uri.parse("https://youtu.be/BFDO_-Fppd0") // missing 'http://' will cause crashed
+                Uri.parse("https://youtu.be/htgBQRznszI") // missing 'http://' will cause crashed
             val intent = Intent(Intent.ACTION_VIEW, uri)
             startActivity(intent)
         }
 
         binding.extend3.setOnClickListener {
             val uri: Uri =
-                Uri.parse("https://youtu.be/Qwgz70fFvI8") // missing 'http://' will cause crashed
+                Uri.parse("https://youtu.be/Bw7gzJUtkl8") // missing 'http://' will cause crashed
             val intent = Intent(Intent.ACTION_VIEW, uri)
             startActivity(intent)
         }

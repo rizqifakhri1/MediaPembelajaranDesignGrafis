@@ -25,18 +25,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/ic_logoapp"/>
 
-    <ImageView
+    <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/btn_materi"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@drawable/round_bg_default"
         android:backgroundTint="@color/biru"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ic_logoapp"
-        app:layout_constraintBottom_toTopOf="@id/tv_atau"/>
+        app:layout_constraintBottom_toTopOf="@id/tv_atau"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/kotak_biru"/>
 
     <ImageView
         android:layout_width="wrap_content"
@@ -79,19 +82,21 @@
         app:layout_constraintTop_toTopOf="@id/tv_atau"
         app:layout_constraintBottom_toBottomOf="@id/tv_atau"/>
 
-    <ImageView
+    <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/btn_video"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@drawable/round_bg_default"
-        android:backgroundTint="@color/orange"
         android:layout_marginHorizontal="16dp"
         android:layout_marginBottom="64dp"
         android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_atau"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/kotak_orange"/>
 
     <ImageView
         android:layout_width="wrap_content"
